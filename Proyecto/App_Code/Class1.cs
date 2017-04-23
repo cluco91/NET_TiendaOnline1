@@ -8,9 +8,6 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
 public class Class1
 {
 	
@@ -23,7 +20,6 @@ public class Class1
     for (int i = 0; i < length; i++)
     {
     int x = random.Next(1, chars.Length);
-    //For avoiding Repetation of Characters
     if (!password.Contains(chars.GetValue(x).ToString()))
     password += chars.GetValue(x);
     else
